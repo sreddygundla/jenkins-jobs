@@ -31,7 +31,7 @@ organizationFolder("/sgundla/git-org-scanner") {
           strategyId 3
       }
       traits << 'jenkins.scm.impl.trait.WildcardSCMHeadFilterTrait plugin="scm-api@2.6.3"' {
-          includes '*',
+          includes '*'
           excludes 'master'
       }
     }
