@@ -17,7 +17,7 @@ organizationFolder("/sgundla/git-org-scanner") {
         apiUri("https://api.github.com")
         credentialsId('github-token')
         traits {
-          publicRepoPullRequestFilterTrait()
+          //publicRepoPullRequestFilterTrait()
         }
       }
     }
