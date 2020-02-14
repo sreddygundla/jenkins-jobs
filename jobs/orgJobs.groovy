@@ -22,18 +22,18 @@ organizationFolder("/sgundla/git-org-scanner") {
       }
     }
 
-    configure {
-      def traits = it / navigators / 'org.jenkinsci.plugins.github__branch__source.GitHubSCMNavigator' / traits
-      traits << 'jenkins.scm.impl.trait.RegexSCMSourceFilterTrait plugin="scm-api@2.6.3"' {
-          regex '.*'
-      }
-      traits << 'org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait' {
-          strategyId 3
-      }
-      traits << 'jenkins.scm.impl.trait.WildcardSCMHeadFilterTrait plugin="scm-api@2.6.3"' {
-          excludes 'master'
-      }
-    }
+    // configure {
+    //   def traits = it / navigators / 'org.jenkinsci.plugins.github__branch__source.GitHubSCMNavigator' / traits
+    //   traits << 'jenkins.scm.impl.trait.RegexSCMSourceFilterTrait plugin="scm-api@2.6.3"' {
+    //       regex '.*'
+    //   }
+    //   traits << 'org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait' {
+    //       strategyId 3
+    //   }
+    //   traits << 'jenkins.scm.impl.trait.WildcardSCMHeadFilterTrait plugin="scm-api@2.6.3"' {
+    //       excludes 'master'
+    //   }
+    // }
     projectFactories {
       workflowMultiBranchProjectFactory {
         // Relative location within the checkout of your Pipeline script.
