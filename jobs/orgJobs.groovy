@@ -8,7 +8,7 @@ organizationFolder("/sgundla/git-org-scanner") {
     description('This contains branch source jobs for GitHub')
     displayName('Organization Folder')
     triggers {
-        periodic(5)
+        periodic(86400000)
     }
 
     organizations {
