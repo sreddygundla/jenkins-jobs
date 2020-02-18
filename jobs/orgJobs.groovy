@@ -1,5 +1,4 @@
-import com.sreddygundla.devops.createFolder
-import com.sreddygundla.devops.createGitHubOrgFolder
+import com.sreddygundla.devops.*
 
 String parentFolder = "sreddygundla"
 
