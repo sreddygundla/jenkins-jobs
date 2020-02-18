@@ -1,8 +1,8 @@
-Package com.sreddygundla.devops
+package com.sreddygundla.devops
 
 // import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory
-
+class createFolder {
   String parentFolder
   String folderName
   String envVars
@@ -23,5 +23,5 @@ import javaposse.jobdsl.dsl.DslFactory
       }
     }
     return folderName;
-  
+  }
 }

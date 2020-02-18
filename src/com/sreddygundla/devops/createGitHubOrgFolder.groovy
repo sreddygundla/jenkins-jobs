@@ -1,9 +1,9 @@
-Package com.sreddygundla.devops
+package com.sreddygundla.devops
 
 // import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory
 
-
+class createGitHubOrgFolder {
   String parentFolder
   String folderName
   String orgName
@@ -66,5 +66,5 @@ import javaposse.jobdsl.dsl.DslFactory
         // }
       }
     }
-  
+  }
 }
