@@ -9,7 +9,7 @@ class createFolder {
   List groups
 
   def build(DslFactory dslFactory) {
-    foldName = parentFolder + "/" + folderName
+    def foldName = parentFolder + "/" + folderName
 
     dslFactory.folder("${foldName}") {
       displayName("${folderName}")
