@@ -3,7 +3,7 @@ Package com.sreddygundla.devops
 // import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory
 
-public class createGitHubOrgFolder {
+class createGitHubOrgFolder {
   String parentFolder
   String folderName
   String orgName

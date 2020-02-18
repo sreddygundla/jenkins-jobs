@@ -3,7 +3,7 @@ Package com.sreddygundla.devops
 // import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory
 
-public class createFolder {
+class createFolder {
   String parentFolder
   String folderName
   String envVars
