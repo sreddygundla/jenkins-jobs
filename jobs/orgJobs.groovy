@@ -3,14 +3,14 @@ import com.sreddygundla.devops.createGitHubOrgFolders
 
 String parentFolder = "sreddygundla"
 
-parentFolder = new createFolders(
+parentFolder = new createFolders.createFolder(
   parentFolder: "${parentFolder}",
   folderName: "test",
   envVars: "TESTFOLDER=sreddy\nTESTING=gundla",
   groups: [['group1', 'role1'], ['group2', 'role2']]
 ).build(this)
 
-new createGitHubOrgFolders(
+new createGitHubOrgFolders.createGitHubOrgFolder(
   parentFolder: "${parentFolder}",
   folderName: "testScanner",
   orgName: "sreddygundla",
