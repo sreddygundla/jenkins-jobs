@@ -18,9 +18,9 @@ class createGitHubOrgFolder {
     String jenkinsFilePath = 'JenkinsFile'
     String gitHubCredentialsId = 'github-token'
     String aigGitHubAPI = 'https://api.github.com'
-    folderName = parentFolder + "/" + folderName
+    foldName = parentFolder + "/" + folderName
 
-    dslFactory.organizationFolder("${folderName}") {
+    dslFactory.organizationFolder("${foldName}") {
       displayName("${folderName}")
       triggers {
         periodic(1440)

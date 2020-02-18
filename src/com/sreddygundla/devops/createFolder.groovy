@@ -9,9 +9,9 @@ class createFolder {
   List groups
 
   def build(DslFactory dslFactory) {
-    folderName = parentFolder + "/" + folderName
+    foldName = parentFolder + "/" + folderName
 
-    dslFactory.folder("${folderName}") {
+    dslFactory.folder("${foldName}") {
       displayName("${folderName}")
       properties {
         // envVarsFolderProperty {
@@ -22,6 +22,6 @@ class createFolder {
         // }
       }
     }
-    return folderName;
+    return foldName;
   }
 }
